@@ -29,6 +29,12 @@
             font-size: 1.2rem;
         }
 
+        .card-2,
+        .card-4 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
         .nav-links {
             display: flex;
             gap: 1.5rem;
@@ -1487,10 +1493,10 @@
             }
 
             .containerjoin .main-title {
-                padding:40px 0px;
+                padding: 40px 0px;
                 margin-bottom: 0;
                 background: #121212;
-            }   
+            }
 
             .containerjoin .content-wrapper {
                 flex-direction: column;
@@ -1498,17 +1504,17 @@
             }
 
             .containerjoin .content-card {
-                        padding: 10px 0 0 0;
-                        border-radius: 0;
-                        background: #121212;
-            }
-
-            .containerjoin .content-card::before{
+                padding: 10px 0 0 0;
+                border-radius: 0;
                 background: #121212;
             }
 
-            .containerjoin .target-list{
-                    padding: 0 10px 0 10px;
+            .containerjoin .content-card::before {
+                background: #121212;
+            }
+
+            .containerjoin .target-list {
+                padding: 0 10px 0 10px;
             }
 
             .illustration {
@@ -1559,13 +1565,14 @@
                 line-height: 1.6;
             }
 
-           .faq-section, .hero-section,
+            .faq-section,
+            .hero-section,
             .sectionfour,
             .sectionthree {
                 margin: 0px 0px !important;
             }
 
-            .form-section{
+            .form-section {
                 padding: 0;
             }
 
@@ -1663,8 +1670,14 @@
                 margin: 0px;
             }
 
-            input[type="text"], input[type="email"], input[type="tel"]{
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"] {
                 width: -webkit-fill-available;
+            }
+
+            .card{
+                padding:10px 20px
             }
 
         }
