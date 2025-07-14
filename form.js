@@ -386,3 +386,34 @@ document.addEventListener("DOMContentLoaded", () => {
     emailItem.style.cursor = "pointer"
   }
 })
+
+// roqmap section scroll effect
+window.addEventListener('scroll', ()=> {
+        const cards=document.querySelectorAll('.card');
+        const scrollTop=window.pageYOffset;
+
+        cards.forEach((card, index)=> {
+                const cardTop=card.offsetTop;
+                const cardHeight=card.offsetHeight;
+                const windowHeight=window.innerHeight;
+
+                // Calculate if card should be stacked
+                if (scrollTop > cardTop - windowHeight + 100) {
+                    card.classList.add('stacked');
+                }
+
+                else {
+                    card.classList.remove('stacked');
+                }
+            });
+    });
+
+// Hide scroll indicator after first scroll
+let hasScrolled=false;
+
+window.addEventListener('scroll', ()=> {
+        if ( !hasScrolled) {
+            document.querySelector('.scroll-indicator').style.opacity='0';
+            hasScrolled=true;
+        }
+    });

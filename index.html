@@ -4,39 +4,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hero Section Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>YC</title>
     <link rel="stylesheet" href="yc.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80px" viewBox="0 0 38 24.509" xml:space="preserve"
-                height="60px">
-                <path fill="#e0b400"
-                    d="M21.811 24.621H.112V.112h38v24.509zm5.885-5.421c2.842-.263 5.725-1.997 5.879-3.556-.47 0-.938-.018-1.404.01-.163.01-.367.089-.47.208-1.358 1.573-3.059 2.242-5.109 1.897-3.263-.548-5.044-3.885-3.765-6.68 1.458-3.187 5.794-3.949 8.395-1.488.158.149.339.36.524.377.564.05 1.135.018 1.772.018-.1-.165-.142-.247-.195-.319C30.857 6.279 25.8 5.78 22.706 8.619c-2.399 2.201-2.65 5.623-.56 8.124 1.41 1.687 3.284 2.41 5.551 2.457m-10.969-7.363 3.458-4.849c-.446 0-.764.029-1.075-.006-.535-.06-.875.118-1.192.587-1.038 1.532-2.139 3.022-3.233 4.553-.123-.157-.228-.284-.324-.418-1.176-1.644-2.333-3.301-3.531-4.928-.816-1.108-1.723-2.137-3.125-2.527-1.684-.469-3.191-.097-4.603.969l1.043.995c1.807-1.211 3.295-1.043 4.74.509.216.232.415.484.6.741 1.403 1.942 2.807 3.882 4.189 5.839.158.224.248.543.253.82.025 1.404.011 2.809.011 4.214v.622h1.471c0-1.054.082-2.074-.019-3.074-.156-1.542.192-2.87 1.337-4.046" />
-                <path fill="#050401"
-                    d="M27.644 19.202c-2.215-.049-4.089-.772-5.499-2.459-2.091-2.501-1.839-5.923.56-8.124 3.094-2.839 8.152-2.34 10.617 1.048.053.073.094.154.195.319-.637 0-1.208.032-1.772-.018-.185-.016-.367-.227-.524-.377-2.601-2.461-6.937-1.699-8.395 1.488-1.279 2.796.503 6.132 3.765 6.68 2.05.344 3.751-.325 5.109-1.897.103-.119.307-.199.47-.208.466-.028.935-.01 1.404-.01-.154 1.559-3.037 3.292-5.93 3.558" />
-                <path fill="#030301"
-                    d="M16.701 11.869c-1.12 1.144-1.468 2.473-1.312 4.014.101 1.001.019 2.02.019 3.074h-1.471v-.622c0-1.405.013-2.81-.012-4.214a1.55 1.55 0 0 0-.253-.82c-1.382-1.957-2.786-3.897-4.188-5.839a8 8 0 0 0-.6-.741c-1.445-1.551-2.933-1.72-4.74-.509l-1.043-.995c1.412-1.066 2.92-1.437 4.603-.969 1.402.39 2.309 1.419 3.125 2.527 1.198 1.627 2.355 3.285 3.531 4.928.096.134.201.26.324.418 1.094-1.531 2.195-3.021 3.233-4.553.318-.469.657-.647 1.192-.587.311.035.629.006 1.075.006-1.192 1.671-2.325 3.26-3.483 4.881" />
-            </svg>
+            <img src="assets/YAAP_CAPITAL.svg" alt="Logo" width="100" height="100">
+
         </div>
-        <div class="nav-links">
+        <!-- <div class="nav-links">
             <a href="#">Features</a>
             <a href="#">Discover</a>
             <a href="#">Gallery</a>
             <a href="#">Templates</a>
             <a href="#">Updates</a>
-        </div>
-        <a href="#" class="updates-button">Updates</a>
+        </div> -->
+        <button class="updates-button cta-button">Waitlist</button>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
-            <h1>From Zero to <span style="font-size: 40px;font-weight: 900;">Pro Creator</span> in 6 Months</h1>
-            <p>Launch Your AI Career With Proven Experts Who’ve Built Successful Programs Reaching Millions Of Engineers
-                Worldwide</p>
-            <button class="cta-button">Submit Entrance Application</button>
+            <h1>You are only as good as you communicate</h1>
+            <p>Join India's elite 12 week cohort that turns smart professionals into world-class communicators</p>
+            <button class="cta-button">Waitlist</button>
         </div>
     </section>
 
@@ -133,9 +129,8 @@
         </div>
     </div>
 
-
     <section class="sectionthree">
-        <h2>What's <em>inside?</em></h2>
+        <h2 class="main-title">What's inside?</h2>
         <div class="grid">
             <div class="card">
                 <h3>5-Month Program</h3>
@@ -181,7 +176,7 @@
     </section>
 
     <section class="sectionfour">
-        <h2>By Graduation, <em>You'll Have</em></h2>
+        <h2 class="main-title">By Graduation, You'll Have</h2>
         <div class="grid">
             <div class="item">
                 <div class="icon">
@@ -278,167 +273,54 @@
         </div>
     </section>
 
-    <section class="roadmap-section">
-        <div class="sticky-scroll-container">
-            <div class="content-wrapper">
-                <!-- Left sticky card -->
-                <div class="left-section">
-                    <div class="sticky-card">
-                        <div class="card main-card">
-                            <div class="card-content main-card-content">
-                                <h2 class="main-title">
-                                    ROADMAP TO BECOME<br>
-                                    A PRO CREATOR
-                                </h2>
-                                <div class="divider"></div>
-                            </div>
-                        </div>
+    <section class="roadmap_section">
+        <div class="container">
+            <h2 class="main-title">ROADMAP TO BECOME A PRO CREATOR</h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-number">01</div>
+                    <div class="card-content">
+                        <h2>Innovation</h2>
+                        <p>Pushing boundaries and creating solutions that transform the way we work and live. Innovation
+                            drives progress and opens new possibilities.</p>
                     </div>
                 </div>
 
-                <!-- Right scrolling cards -->
-                <div class="right-section">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="month-label">MONTH 1</div>
-                            <h3 class="card-title">Foundation Building</h3>
-                            <p class="card-description">Start your creator journey with essential fundamentals</p>
-                            <div class="points-list">
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Find your niche & build your brand</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Mastering 3-ACT writing structure and retention
-                                        techniques</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Launch channels with your first content</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card-number">02</div>
+                    <div class="card-content">
+                        <h2>Collaboration</h2>
+                        <p>Working together to achieve common goals, sharing knowledge and building stronger communities
+                            through teamwork and mutual support.</p>
                     </div>
+                </div>
 
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="month-label">MONTH 2</div>
-                            <h3 class="card-title">Production Mastery</h3>
-                            <p class="card-description">Level up your content quality with pro techniques and platform
-                                strategies</p>
-                            <div class="points-list">
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Professional shooting & editing techniques</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Platform-specific strategies</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Advanced content creation workflows</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card-number">03</div>
+                    <div class="card-content">
+                        <h2>Excellence</h2>
+                        <p>Striving for the highest standards in everything we do, continuously improving and delivering
+                            quality results that exceed expectations.</p>
                     </div>
+                </div>
 
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="month-label">MONTH 3</div>
-                            <h3 class="card-title">Growth & Monetization</h3>
-                            <p class="card-description">Learn how successful creators scale audiences and generate
-                                income</p>
-                            <div class="points-list">
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Viral content psychology</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Analytics & optimization</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Revenue stream development</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="month-label">MONTH 4</div>
-                            <h3 class="card-title">Community Building</h3>
-                            <p class="card-description">Build and nurture an engaged community around your content</p>
-                            <div class="points-list">
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Audience engagement strategies</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Community management tools</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Building loyal subscriber base</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="month-label">MONTH 5</div>
-                            <h3 class="card-title">Brand Partnerships</h3>
-                            <p class="card-description">Master the art of collaborations and sponsored content</p>
-                            <div class="points-list">
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Negotiating brand deals</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Creating authentic sponsored content</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Building long-term partnerships</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="month-label">MONTH 6</div>
-                            <h3 class="card-title">Scaling & Automation</h3>
-                            <p class="card-description">Scale your creator business with systems and automation</p>
-                            <div class="points-list">
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Content planning & batch creation</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Team building & delegation</span>
-                                </div>
-                                <div class="point">
-                                    <span class="bullet">-</span>
-                                    <span class="point-text">Passive income strategies</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card">
+                    <div class="card-number">04</div>
+                    <div class="card-content">
+                        <h2>Growth</h2>
+                        <p>Embracing change and learning opportunities, developing skills and expanding horizons to
+                            reach new heights of personal and professional achievement.</p>
                     </div>
                 </div>
             </div>
+
         </div>
+
     </section>
 
     <div class="containerjoin">
-        <h1 class="main-title">Who Should <em>Join?</em></h1>
+        <h2 class="main-title">Who Should Join?</h2>
 
         <div class="content-card">
             <div class="content-wrapper">
@@ -761,10 +643,10 @@
 
             <!-- Navigation Links -->
             <div class="nav-links">
-                <button class="nav-button">Privacy Policy</button>
-                <button class="nav-button">Refund Policy</button>
-                <button class="nav-button">Contact Us</button>
-                <button class="nav-button">Terms & Conditions</button>
+                <button class="nav-button cta-button">Privacy Policy</button>
+                <button class="nav-button cta-button">Refund Policy</button>
+                <button class="nav-button cta-button">Contact Us</button>
+                <button class="nav-button cta">Terms & Conditions</button>
             </div>
 
             <!-- Copyright -->
