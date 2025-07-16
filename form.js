@@ -32,11 +32,11 @@ document.querySelector('.cta-button').addEventListener('click', function () {
 // Video URLs - replace with your actual video URLs
 // YouTube Video IDs
 const youtubeVideoIds = [
-    "qfr_E5VzFjk",
-    "dVK2MV_LgPs",
-    "h3QF64J9MIA",
-    "goqsK_rvgf8",
-    "pwfzmo6QT1A",
+    "Yb5ieV98brs",
+    "fS8--o5n8os",
+    "Z0Mz798H5ho",
+    "X3MG4fEJiF0",
+    "savwVzZh5go",
     "sVemNllnNCA"
 ];
 
@@ -64,7 +64,7 @@ function createThumbnailVideo(videoId) {
             class="thumbnail-iframe"
             width="200" 
             height="112" 
-            src="https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&modestbranding=1&showinfo=0" 
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&modestbranding=1&showinfo=0&rel=0" 
             frameborder="0" 
             allow="autoplay; encrypted-media"
             allowfullscreen>
@@ -87,7 +87,7 @@ function changeMainVideo(videoId) {
         <iframe 
             width="560" 
             height="315" 
-            src="https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1" 
+            src="https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&playlist=${videoId}&showinfo=0&rel=0"
             title="YouTube video player" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -98,9 +98,9 @@ function changeMainVideo(videoId) {
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    initVideoPlayer();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     initVideoPlayer();
+// });
 
 // Play all thumbnail videos
 function playAllThumbnailVideos() {

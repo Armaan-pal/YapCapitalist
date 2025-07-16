@@ -54,10 +54,10 @@
             color: #FFFFFF;
         }
 
-        img{
-    width: 100%;
-    height: -webkit-fill-available;
-}
+        img {
+            width: 100%;
+            height: -webkit-fill-available;
+        }
 
         /* Navigation */
         .navbar {
@@ -65,13 +65,20 @@
             justify-content: space-between;
             /* background: #000; */
             background: #000;
-            align-items: center;
+            /* align-items: center; */
             padding: 1rem 2rem;
         }
 
         .navbar .logo {
             font-weight: bold;
             font-size: 1.2rem;
+            height: fit-content;
+            margin-top: 14px;
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
         }
 
         .card-2,
@@ -917,10 +924,11 @@
             background-color: #111;
         }
 
-        .main-video-container iframe, .thumbnail-iframe{
-    width: 100%;
-    height: -webkit-fill-available;
-}
+        .main-video-container iframe,
+        .thumbnail-iframe {
+            width: 100%;
+            height: -webkit-fill-available;
+        }
 
         /* Thumbnail Slider Styles */
         .thumbnail-slider-container {
