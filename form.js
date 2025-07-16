@@ -1,33 +1,68 @@
-// Example submission handler
-document.getElementById('guideForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+        const formEnterprise = () => {
+            const formData = {
+                firstName: document.querySelector("#name").value,
+                email: document.querySelector("#email").value,
+                message: document.querySelector("#message").value,
+                company: document.querySelector("#company").value,
+                jobTitle: document.querySelector("#jobTitle").value,
+                consent: document.querySelector("#consent").checked,
+            };
 
-    const form = e.target;
-    if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-    }
+            document.getElementById("loader").classList.remove("hidden");
 
-    const link = document.createElement('a');
-    link.href = 'assets/The_Articulate_Mind.pdf';
-    link.download = 'The_Articulate_Mind.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-// Create animated stars
-function createStars() {
-    // Stars disabled for premium look
-}
+            // 🔁 1. Send to Google Sheet
+            fetch("https://script.google.com/macros/s/AKfycbylgr4S4vxBRVwkCkzLuIaGmrMA1OwPKGYdGbuw-9rBefmWi9Wngk8BIqe9TFG7xaQMEg/exec?action=done", {
+                method: "POST",
+                body: JSON.stringify(formData),
+                redirect: "follow"
+            })
+                .then(response => response.text())
+                .then(result => {
+                    console.log("Sheet Success:", result);
+                })
+                .catch(error => {
+                    console.error("Sheet Error:", error);
+                });
 
-// Initialize stars when page loads
-document.addEventListener('DOMContentLoaded', createStars);
+            // 📩 2. Send email via EmailJS
+            const emailData = {
+                from_name: formData.firstName,
+                user_email: formData.email,
+                user_phone: formData.message,
+                company: formData.company,
+                jobTitle: formData.jobTitle,
+                message: "Form submitted via YC site",
+            };
 
-// Button click handler
-document.querySelector('.cta-button').addEventListener('click', function () {
-    // Add your application logic here
-    console.log('Application button clicked!');
-});
+            emailjs.send("service_q0wuesq", "template_g1wxjuj", emailData)
+                .then(() => {
+                    showPopup("<h2>Form Submitted</h2><p>Please check your promotion and spam folder and move the email to primary inbox. You'll receive your book within the next 2 to 5 minutes</p>", "success");
+                })
+                .catch(() => {
+                    showPopup("Form submitted, but email failed.", "error");
+                })
+                .finally(() => {
+                    document.getElementById("loader").classList.add("hidden");
+                });
+        };
+
+
+        function showPopup(message, type) {
+            const popupOverlay = document.getElementById('popup-overlay');
+            const content = document.getElementById('popup-message');
+
+            popupOverlay.classList.remove('hidden');
+            content.innerHTML = message;
+        }
+
+        function closePopup() {
+            const popupOverlay = document.getElementById('popup-overlay');
+            popupOverlay.classList.add('hidden');
+
+            // Reset form and redirect
+            document.querySelector('.enterprises-contact-inner-wrap form').reset();
+            window.location.href = "https://www.instagram.com/gurmeet__oberoi?igsh=eG5zOWs3ZmI2eTVq";
+        }
 
 // Video URLs - replace with your actual video URLs
 // YouTube Video IDs
