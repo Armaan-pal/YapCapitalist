@@ -1287,6 +1287,78 @@
             transform: translateY(0);
         }
 
+        /* table */
+
+        .comparison-section {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+}
+
+/* .comparison-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+} */
+
+.comparison-section p {
+  /* font-size: 1rem;
+  color: #555; */
+  margin-bottom: 20px;
+}
+
+.comparison-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #000;
+}
+
+.comparison-section th, 
+.comparison-section td {
+  /* border: 1px solid #ddd; */
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-section th {
+  /* background-color: #f0f0f0; */
+  color: #ffff00;;
+  font-weight: bold;
+}
+
+.comparison-section tr {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+  color:#ffffff;
+  font-weight: bold;
+}
+
+.comparison-section tbody tr:nth-child(even) {
+  /* background-color: #f9f9f9; */
+}
+
+.comparison-section em {
+  font-style: italic;
+}
+
+.comparison-section td {
+  font-size: 0.95rem;
+}
+
+.comparison-section td:contains('✅') {
+  color: green;
+  font-weight: bold;
+}
+
+.comparison-section td:contains('❌') {
+  color: red;
+  font-weight: bold;
+}
+
+
         /* yap section */
 
         .yap-section {
