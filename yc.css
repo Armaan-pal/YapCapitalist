@@ -51,6 +51,10 @@
             color: #ffffff;
         }
 
+        p{
+            font-size: 1.2rem !important;
+        }
+
         img {
             width: 100%;
             height: -webkit-fill-available;
@@ -115,7 +119,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            min-height: 80vh;
+            min-height: 68vh;
             position: relative;
             /* padding: 2rem; */
         }
@@ -172,6 +176,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+
+        .hero-content .cta-button{
+            margin-bottom: 20px;
         }
 
 
@@ -326,7 +334,7 @@
         }
 
         .sectionthree .card p {
-            font-size: 0.95rem;
+            /* font-size: 0.95rem; */
             color: #ddd;
             margin: 0;
         }
@@ -430,7 +438,7 @@
 
         .sectionfour .content p {
             margin: 0;
-            font-size: 0.95rem;
+            /* font-size: 0.95rem; */
             color: #ddd;
             line-height: 1.4;
         }
@@ -737,7 +745,7 @@
         }
 
         .card-description {
-            font-size: 0.95rem;
+            /* font-size: 0.95rem; */
             color: #cccccc;
             line-height: 1.5;
             text-transform: uppercase;
@@ -1069,7 +1077,7 @@
             margin-top: 0;
         }
 
-        .containerjoin button{
+        .containerjoin button {
             margin-bottom: 0px;
         }
 
@@ -1087,6 +1095,10 @@
             margin-bottom: 2rem;
             position: relative;
             overflow: hidden;
+        }
+
+        .join-btm{
+                margin-bottom: 42px;
         }
 
         /* .containerjoin .content-card::before {
@@ -1289,76 +1301,77 @@
 
         /* table */
 
-        .comparison-section {
+        /* .comparison-section {
   font-family: Arial, sans-serif;
   padding: 20px;
   background-color: #000;
   max-width: 1200px;
   margin: 0 auto;
   /* border: 1px solid #ddd; */
-  border-radius: 10px;
-}
+        border-radius: 10px;
+        }
 
-/* .comparison-section h2 {
+        /* .comparison-section h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 } */
 
-.comparison-section p {
-  /* font-size: 1rem;
+        .comparison-section p {
+            /* font-size: 1rem;
   color: #555; */
-  margin-bottom: 20px;
-}
+            margin-bottom: 20px;
+        }
 
-.comparison-section table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #000;
-}
+        .comparison-section table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #000;
+        }
 
-.comparison-section th, 
-.comparison-section td {
-  /* border: 1px solid #ddd; */
-  padding: 12px;
-  text-align: left;
-  vertical-align: top;
-}
+        .comparison-section th,
+        .comparison-section td {
+            /* border: 1px solid #ddd; */
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
 
-.comparison-section th {
-  /* background-color: #f0f0f0; */
-  color: #ffff00;;
-  font-weight: bold;
-}
+        .comparison-section th {
+            /* background-color: #f0f0f0; */
+            color: #ffff00;
+            ;
+            font-weight: bold;
+        }
 
-.comparison-section tr {
-  background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
-  color:#ffffff;
-  font-weight: bold;
-}
+        .comparison-section tr {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+            color: #ffffff;
+            font-weight: bold;
+        }
 
-.comparison-section tbody tr:nth-child(even) {
-  /* background-color: #f9f9f9; */
-}
+        .comparison-section tbody tr:nth-child(even) {
+            /* background-color: #f9f9f9; */
+        }
 
-.comparison-section em {
-  font-style: italic;
-}
+        .comparison-section em {
+            font-style: italic;
+        }
 
-.comparison-section td {
-  font-size: 0.95rem;
-}
+        .comparison-section td {
+            /* font-size: 0.95rem; */
+        }
 
-.comparison-section td:contains('✅') {
-  color: green;
-  font-weight: bold;
-}
+        .comparison-section td:contains('✅') {
+            color: green;
+            font-weight: bold;
+        }
 
-.comparison-section td:contains('❌') {
-  color: red;
-  font-weight: bold;
-}
+        .comparison-section td:contains('❌') {
+            color: red;
+            font-weight: bold;
+        }
 
-
+        */
         /* yap section */
 
         .yap-section {
@@ -2152,7 +2165,8 @@
 
         .enterprises-contact-inner-wrap h2 {
             color: #ffff00;
-            margin-top: 0;;
+            margin-top: 0;
+            ;
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
         }
