@@ -9,10 +9,6 @@
         }
 
 
-        /* h1 span{
-            font-size: 4rem;
-        } */
-
         @font-face {
             font-family: 'newtitle';
             src: url('assets/fonts/NewTitle-Variable.woff2') format('woff2'),
@@ -147,9 +143,8 @@
         .hero {
             display: flex;
             background: #000;
-
-            background: url(assets/Chatgptbkgrund.png) no-repeat center;
-
+            background-size: 100% 100% !important;
+            background: url(assets/gptbckgrund.png) no-repeat center;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -159,11 +154,6 @@
             /* padding: 2rem; */
         }
 
-        .hero h1 {
-            /* font-size: 2.5rem;
-            font-weight: bold; */
-            /* max-width: 700px; */
-        }
 
         .hero-content {
             display: flex;
@@ -1131,17 +1121,6 @@
             margin-bottom: 42px;
         }
 
-        /* .containerjoin .content-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
-            pointer-events: none;
-        } */
-
         .containerjoin .content-wrapper {
             display: flex;
             align-items: center;
@@ -1221,15 +1200,6 @@
             border-radius: 50%;
         }
 
-        /* .body {
-            width: 60px;
-            height: 120px;
-            border: 2px solid #6b7280;
-            border-radius: 30px;
-            margin: 0 auto;
-            position: relative;
-        } */
-
         .arm-left,
         .arm-right {
             position: absolute;
@@ -1306,19 +1276,6 @@
             background: #6b7280;
         }
 
-        .containerjoin .cta-button {
-            /* background: #2563eb; */
-            /* color: white;
-            border: none;
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease; */
-            /* box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); */
-        }
-
         .containerjoin .cta-button:hover {
             /* background: #1d4ed8; */
             transform: translateY(-2px);
@@ -1331,24 +1288,7 @@
 
         /* table */
 
-        /* .comparison-section {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #000;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        }
-
-        /* .comparison-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-} */
-
         .comparison-section p {
-            /* font-size: 1rem;
-  color: #555; */
             margin-bottom: 20px;
         }
 
@@ -1434,37 +1374,10 @@
             border: none;
         }
 
-        /* .yap-section .yap-play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.6);
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            font-size: 2rem;
-            width: 60px;
-            height: 60px;
-            cursor: pointer;
-        } */
-
         .yap-section .yap-text-content {
             /* flex: 1 1 400px; */
             width: 100%;
         }
-
-        /* .yap-section .yap-text-content h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-
-        .yap-section .yap-text-content p {
-            font-size: 1rem;
-            line-height: 1.6;
-            margin-bottom: 12px;
-        } */
-
 
         /* Footer styles */
         .footer {
@@ -1513,17 +1426,6 @@
             justify-content: center;
             gap: 16px;
         }
-
-        /* .footer .nav-button {
-            background-color: #222;
-            color: #000;
-            border: none;
-            border-radius: 14px 24px;
-            padding: 8px 24px;
-            font-size: 14px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        } */
 
         .footer .nav-button:hover {
             background-color: #333;
@@ -1715,15 +1617,6 @@
                 /* Hide nav links on mobile (simplified) */
             }
 
-            .hero::before {
-                content: "";
-                background: url('assets/Chatgpt_background.png') no-repeat center/contain;
-                top: 20%;
-                left: 50%;
-                width: 280px;
-                height: 280px;
-            }
-
             .sectionfour h2 {
                 font-size: 1.5rem;
             }
@@ -1854,30 +1747,6 @@
             z-index: 4;
         }
 
-        /* 
-        .roadmap_section .card:nth-child(1) {
-            background: rgb(26, 26, 26);
-            z-index: 1;
-        }
-
-        .roadmap_section .card:nth-child(2) {
-            background: rgb(26, 26, 26);
-            z-index: 2;
-            top: 20px;
-        }
-
-        .roadmap_section .card:nth-child(3) {
-            background: rgb(26, 26, 26);
-            z-index: 3;
-            top: 40px;
-        }
-
-        .roadmap_section .card:nth-child(4) {
-            background: rgb(26, 26, 26);
-            z-index: 4;
-            top: 60px; 
-        } */
-
         .roadmap_section .card-content {
             text-align: center;
             color: white;
@@ -1948,6 +1817,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+
+            .hero {
+                background: url(assets/gptbckgrund.png) no-repeat center;
+            }
 
             .cards-grid {
                 margin-bottom: 0;
@@ -2268,32 +2141,6 @@
             /* border-bottom: 1px solid #333; */
         }
 
-        /* .site-header .container {
-            width: 100%;
-            max-width: 1000px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .logo {
-            height: 40px;
-        } */
-
-        /* .download-btn {
-            background-color: #facc15;
-            color: #121212;
-            text-decoration: none;
-            padding: 0.6rem 1.2rem;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .download-btn:hover {
-            background-color: #e0b60f;
-        } */
-
         .desk {
             display: block;
         }
@@ -2439,11 +2286,6 @@
                 transform: translateY(0);
             }
         }
-
-        /* .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        } */
 
         .section-title {
             background: linear-gradient(135deg, #ffff00, #ffff00);
@@ -2623,10 +2465,6 @@
         }
 
         @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-
             .curriculum-section {
                 padding: 2rem 1.5rem;
             }
@@ -2642,8 +2480,6 @@
                 white-space: nowrap;
             }
         }
-
-
 
         /* curriculum */
 
@@ -2971,10 +2807,6 @@
         }
 
         @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-
             .not-for-section {
                 padding: 2rem 1.5rem;
             }
@@ -2983,3 +2815,27 @@
                 max-width: 100%;
             }
         }
+
+        .div-block-114 {
+    opacity: 1;
+    -webkit-text-fill-color: inherit;
+    /* background-image: radial-gradient(circle at 50% 40%, #1c1743cc, #1c174300 55%); */
+    background-image: radial-gradient(circle  at 50% 40%, rgba(255, 255, 0, 0.1), transparent 68%);
+    background-clip: border-box;
+    border-radius: 300px;
+    width: 800px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.backgroundhero {
+    z-index: -1;
+    background-image: url(https://cdn.prod.website-files.com/5e3560ac9615a2309b6fb86c/654285e5ab26e8e2aff90db8_svg_dot.svg);
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
