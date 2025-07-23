@@ -221,10 +221,20 @@
         .maincon p,
         .sectiontwo p {
             font-size: 18px;
-            max-width: 698px;
+            /* max-width: 698px; */
+            text-align: center;
             color: #fff;
             margin: 0.5rem auto;
             line-height: 1.6;
+        }
+
+        .maincon {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
         }
 
         .sectiontwo h1 {
@@ -1942,11 +1952,11 @@
             text-align: left;
         }
 
-        .details-left svg{
+        .details-left svg {
             width: auto;
         }
 
-        .details-left span{
+        .details-left span {
             width: 100%;
         }
 
@@ -2826,25 +2836,25 @@
         }
 
         .div-block-114 {
-    opacity: 1;
-    -webkit-text-fill-color: inherit;
-    /* background-image: radial-gradient(circle at 50% 40%, #1c1743cc, #1c174300 55%); */
-    background-image: radial-gradient(circle  at 50% 40%, rgba(255, 255, 0, 0.1), transparent 68%);
-    background-clip: border-box;
-    border-radius: 300px;
-    width: 800px;
-    height: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+            opacity: 1;
+            -webkit-text-fill-color: inherit;
+            /* background-image: radial-gradient(circle at 50% 40%, #1c1743cc, #1c174300 55%); */
+            background-image: radial-gradient(circle at 50% 40%, rgba(255, 255, 0, 0.1), transparent 68%);
+            background-clip: border-box;
+            border-radius: 300px;
+            width: 800px;
+            height: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
 
-.backgroundhero {
-    z-index: -1;
-    background-image: url(https://cdn.prod.website-files.com/5e3560ac9615a2309b6fb86c/654285e5ab26e8e2aff90db8_svg_dot.svg);
-    background-repeat: repeat;
-    background-size: auto;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-}
+        .backgroundhero {
+            z-index: -1;
+            background-image: url(https://cdn.prod.website-files.com/5e3560ac9615a2309b6fb86c/654285e5ab26e8e2aff90db8_svg_dot.svg);
+            background-repeat: repeat;
+            background-size: auto;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+        }
